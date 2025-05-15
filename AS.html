@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kernfusion Präsentation</title>
+	<style>
+		body {
+			background: #515151;
+			color: #f7f7f7;
+			font-family: 'Arial', sans-serif;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav {
+			background: rgba(0, 0, 0, 0.5);
+			padding: 10px 20px;
+			max-width: calc(100% - 60px);
+			margin-right: 50px;
+			margin-top: 5px;
+			border-radius: 10px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-right: 10px;
+			font-size: 14px;
+		}
+
+		section {
+			display: none;
+			padding: 15px;
+			border-radius: 10px;
+			background: #ffffff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+			color: #333;
+			font-size: 16px;
+			margin: 20px auto;
+			margin-right: 50px;
+			min-height: 80vh;
+			margin-top: 10px;
+		}
+
+		h2 {
+			color: #007BFF;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+
+		.active {
+			display: block;
+		}
+
+		#slideNumber {
+			position: fixed;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 14px;
+			color: #333333;
+			background: rgba(255, 255, 255, 0.5);
+			padding: 3px 8px;
+			border-radius: 3px;
+		}
+
+		#navigationButtons {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			z-index: 10;
+		}
+
+		#navigationButtons button {
+			flex-grow: 1;
+			width: 40px;
+			text-align: center;
+			margin: 5px 0;
+			padding: 0 15px;
+			background: #007BFF;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		#navigationButtons button:hover {
+			background: #0056b3;
+		}
+	</style>
+</head>
+
+<body class="bgGreyAlpha">
+	<nav class="bgBlackRad">
+		<a href="javascript:void(0);" onclick="showSection('folien1')">Nr.1</a>
+		<a href="javascript:void(0);" onclick="showSection('folien2')">Nr.2</a>
+		<a href="javascript:void(0);" onclick="showSection('folien3')">Nr.3</a>
+		<a href="javascript:void(0);" onclick="showSection('folien4')">Nr.4</a>
+		<a href="javascript:void(0);" onclick="showSection('folien5')">Nr.5</a>
+		<a href="javascript:void(0);" onclick="showSection('folien6')">Nr.6</a>
+		<a href="javascript:void(0);" onclick="showSection('folien7')">Nr.7</a>
+		<a href="javascript:void(0);" onclick="showSection('folien8')">Nr.8</a>
+		<a href="javascript:void(0);" onclick="showSection('folien9')">Nr.9</a>
+		<a href="javascript:void(0);" onclick="showSection('folien10')">Nr.10</a>
+		<a href="javascript:void(0);" onclick="showSection('folien11')">Nr.11</a>
+		<a href="javascript:void(0);" onclick="showSection('folien12')">Nr.12</a>
+		<a href="javascript:void(0);" onclick="showSection('folien13')">Nr.13</a>
+		<a href="javascript:void(0);" onclick="showSection('folien14')">Nr.14</a>
+		<a href="javascript:void(0);" onclick="showSection('folien15')">Nr.15</a>
+		<a href="javascript:void(0);" onclick="showSection('folien16')">Nr.16</a>
+		<a href="javascript:void(0);" onclick="showSection('folien17')">Nr.17</a>
+		<a href="javascript:void(0);" onclick="showSection('folien18')">Nr.18</a>
+		<a href="javascript:void(0);" onclick="showSection('folien19')">Nr.19</a>
+		<a href="javascript:void(0);" onclick="showSection('folien20')">Nr.20</a>
+		<a href="javascript:void(0);" onclick="showSection('folien21')">Nr.21</a>
+		<a href="javascript:void(0);" onclick="showSection('folien22')">Nr.22</a>
+		<a href="javascript:void(0);" onclick="showSection('folien23')">Nr.23</a>
+		<a href="javascript:void(0);" onclick="showSection('folien24')">Nr.24</a>
+		<a href="javascript:void(0);" onclick="showSection('folien25')">Nr.25</a>
+		<a href="javascript:void(0);" onclick="showSection('folien26')">Nr.26</a>
+		<a href="javascript:void(0);" onclick="showSection('folien27')">Nr.27</a>
+		<a href="javascript:void(0);" onclick="showSection('folien28')">Nr.28</a>
+		<a href="javascript:void(0);" onclick="showSection('folien29')">Nr.29</a>
+		<a href="javascript:void(0);" onclick="showSection('folien30')">Nr.30</a>
+		<a href="javascript:void(0);" onclick="showSection('folien31')">Nr.31</a>
+		<a href="javascript:void(0);" onclick="showSection('folien32')">Nr.32</a>
+		<a href="javascript:void(0);" onclick="showSection('folien33')">Nr.33</a>
+		<a href="javascript:void(0);" onclick="showSection('folien34')">Nr.34</a>
+		<a href="javascript:void(0);" onclick="showSection('folien35')">Nr.35</a>
+		<a href="javascript:void(0);" onclick="showSection('folien36')">Nr.36</a>
+		<a href="javascript:void(0);" onclick="showSection('folien37')">Nr.37</a>
+		<a href="javascript:void(0);" onclick="showSection('folien38')">Nr.38</a>
+		<a href="javascript:void(0);" onclick="showSection('folien39')">Nr.39</a>
+		<a href="javascript:void(0);" onclick="showSection('folien40')">Nr.40</a>
+		<a href="javascript:void(0);" onclick="showSection('folien41')">Nr.41</a>
+		<a href="javascript:void(0);" onclick="showSection('folien42')">Nr.42</a>
+		<a href="javascript:void(0);" onclick="showSection('folien43')">Nr.43</a>
+		<a href="javascript:void(0);" onclick="showSection('folien44')">Nr.44</a>
+		<a href="javascript:void(0);" onclick="showSection('folien45')">Nr.45</a>
+		<a href="javascript:void(0);" onclick="showSection('folien46')">Nr.46</a>
+		<a href="javascript:void(0);" onclick="showSection('folien47')">Nr.47</a>
+		<a href="javascript:void(0);" onclick="showSection('folien48')">Nr.48</a>
+		<a href="javascript:void(0);" onclick="showSection('folien49')">Nr.49</a>
+		<a href="javascript:void(0);" onclick="showSection('folien50')">Nr.50</a>
+		<a href="javascript:void(0);" onclick="showSection('quellen')">Quellen</a>
+	</nav>
+
+	<div id="slideNumber"></div>
+
+	<section id="folien1">
+		<h2>Einführung in die Kernfusion</h2>
+		<p>
+			Was ist Kernfusion? Fusion bezeichnet den physikalischen Prozess, bei dem zwei leichte Atomkerne zu einem
+			schwereren Kern verschmelzen<sup id="fnref:1"><a href="#fn:1">1</a></sup>. Dabei wird eine große Menge an
+			Energie freigesetzt. Dieser Prozess findet in der Sonne statt und ist verantwortlich für die enorme
+			Energiemenge, die sie abstrahlt.
+		</p>
+		<p>
+			Warum ist Kernfusion interessant? Saubere Energiequelle: Es entstehen keine schädlichen Treibhausgase und
+			nur geringe Mengen an radioaktiven Abfällen. Unbegrenzte Brennstoffquelle: Brennstoffe wie Deuterium (aus
+			Wasser) und Tritium (aus Lithium) sind praktisch unerschöpflich. Hohe Energieausbeute: Ein Gramm
+			Fusionsbrennstoff kann so viel Energie liefern wie mehrere Tonnen fossiler Brennstoffe.
+		</p>
+		<img src="..\Pictures\Bild.jpg" alt="Error 404" style="width:50%; height:auto;">
+		<footer class="footnotes">
+			<hr>
+			<ol>
+				<li id="fn:1">
+					Erklärung zur Fußnote.
+					<a href="#fnref:1">↩</a>
+				</li>
+			</ol>
+		</footer>
+	</section>
+
+	<section id="folien2">
+		<h2>Grundlagen der Fusionsreaktion</h2>
+		<p>Wichtige Reaktionen: In Fusionsreaktoren wird meist die Verschmelzung von Deuterium (schwerer Wasserstoff)
+			und Tritium (radioaktiver Wasserstoff) genutzt.</p>
+		<p>Reaktionsgleichung: 2H + 3H → 4He + n + Energie</p>
+		<p>Ergebnis: Ein Heliumkern, ein Neutron und große Mengen an Energie. Die freigesetzte Energie stammt aus der
+			Umwandlung von Masse in Energie nach Einsteins Gleichung: E = mc². Ein kleiner Teil der Masse der Kerne wird
+			in Energie umgewandelt.</p>
+	</section>
+
+	<section id="folien3">
+		<h2>Die physikalischen Herausforderungen</h2>
+		<p>Extrem hohe Temperaturen: Um die Fusion zu ermöglichen, müssen die Atomkerne genug Energie haben, um die
+			Coulomb-Barriere zu überwinden. Diese Barriere entsteht durch die abstoßende elektrische Kraft zwischen den
+			positiv geladenen Kernen. Dies erfordert Temperaturen von über 100 Millionen Grad Celsius – das ist mehr als
+			das Zehnfache der Temperatur im Sonneninneren!</p>
+		<p>Plasma: Bei diesen Temperaturen sind Atome vollständig ionisiert, das heißt, Elektronen sind von den
+			Atomkernen getrennt. Dieser Zustand wird Plasma genannt – ein extrem heißes und elektrisch leitfähiges Gas.
+		</p>
+		<p>Plasmadruck und Dichte: Neben hohen Temperaturen muss das Plasma auch eine hohe Dichte und einen
+			ausreichenden Einschluss (Containment) haben, um genug Fusionsreaktionen stattfinden zu lassen.</p>
+	</section>
+
+	<section id="folien4">
+		<h2>Technologien für die Kernfusion</h2>
+		<p>Tokamak: Ein Tokamak ist eine ringförmige Maschine, die ein heißes Plasma durch starke Magnetfelder
+			einschließt. Die Magnetfelder verhindern, dass das Plasma die Wände des Reaktors berührt und abkühlt.</p>
+		<p>Stellarator: Ein alternativer Ansatz zur Plasmaeinschließung, bei dem die Magnetfelder so verdreht sind, dass
+			das Plasma stabiler bleibt als im Tokamak. Der Stellarator ist technisch anspruchsvoller, bietet aber
+			potenziell bessere Stabilität.</p>
+		<p>Trägheitseinschlussfusion (Inertial Confinement Fusion, ICF): Kleine Kügelchen aus Deuterium und Tritium
+			werden durch extrem starke Laser beschossen. Die Energie dieser Laser komprimiert das Kügelchen so stark,
+			dass es zur Fusion kommt.</p>
+	</section>
+
+	<section id="folien5">
+		<h2>Energiegewinnung aus der Fusion</h2>
+		<p>Energieübertragung: Bei der Fusion wird die meiste Energie in Form von schnellen Neutronen freigesetzt. Diese
+			Neutronen tragen die Energie in den Reaktormantel, wo sie von Materialien absorbiert und in Wärme
+			umgewandelt wird.</p>
+		<p>Elektrizitätsproduktion: Die durch die Fusion erzeugte Wärme wird genutzt, um Wasser zu erhitzen und
+			Dampfturbinen anzutreiben, die schließlich Elektrizität erzeugen – ähnlich wie in herkömmlichen Kraftwerken.
+		</p>
+		<p>Tritium-Zyklus: Tritium, einer der Fusionsbrennstoffe, wird in der Natur nur in geringen Mengen gefunden. Es
+			muss im Reaktor durch Neutronenbeschuss von Lithium selbst erzeugt werden.</p>
+	</section>
+
+	<section id="folien6">
+		<h2>Aktuelle Forschungsprojekte</h2>
+		<p>ITER-Projekt: ITER ist der weltweit größte experimentelle Fusionsreaktor und wird in Südfrankreich gebaut. Es
+			ist ein internationales Gemeinschaftsprojekt, das zeigen soll, dass die Fusion als Energiequelle machbar
+			ist.</p>
+		<p>Ziel von ITER: Eine Netto-Energieproduktion, das heißt, mehr Energie aus der Fusion zu gewinnen, als zur
+			Erzeugung des Plasmas benötigt wird.</p>
+		<p>Andere vielversprechende Ansätze: Kompakte Fusionsreaktoren: Kleinere, effizientere Designs, die schneller
+			umgesetzt werden könnten. Fortschritte in der Supraleitung: Diese Technologien ermöglichen stärkere
+			Magnetfelder, die den Einschluss des Plasmas verbessern.</p>
+	</section>
+
+	<section id="folien7">
+		<h2>Herausforderungen der Kernfusion</h2>
+		<p>Energieausbeute: Bislang haben experimentelle Reaktoren mehr Energie verbraucht, als sie durch Fusion
+			erzeugen konnten. Dieses Problem muss gelöst werden, bevor Fusionsenergie kommerziell genutzt werden kann.
+		</p>
+		<p>Materialien: Die Reaktorwände müssen extremen Bedingungen standhalten: Hohe Temperaturen und
+			Neutronenstrahlung können Materialien zerstören. Die Forschung an hitzebeständigen Materialien ist
+			entscheidend.</p>
+		<p>Kosten: Der Bau und Betrieb eines Fusionskraftwerks ist technisch komplex und derzeit noch sehr teuer. Um die
+			Fusion wirtschaftlich tragfähig zu machen, sind deutliche Kostenreduktionen erforderlich.</p>
+	</section>
+
+	<section id="folien8">
+		<h2>Zukunftsperspektiven der Fusionsenergie</h2>
+		<p>Vorteile der Fusion: Unerschöpflich: Fast unbegrenzter Brennstoffvorrat. Umweltfreundlich: Keine
+			Treibhausgase, minimale radioaktive Abfälle. Sicher: Es besteht kein Risiko einer nuklearen Kettenreaktion
+			wie bei Kernspaltung.</p>
+		<p>Wann wird es soweit sein?: Der Weg zur kommerziellen Fusionsenergie ist noch lang, aber die Fortschritte in
+			Forschung und Technik geben Anlass zu Optimismus. Viele Experten glauben, dass die ersten Fusionskraftwerke
+			in den nächsten 30 bis 50 Jahren in Betrieb gehen könnten.</p>
+	</section>
+
+	<section id="folien9">
+		<h2>Fazit</h2>
+		<p>Kernfusion als Energiequelle der Zukunft: Kernfusion bietet das Potenzial, die Energieprobleme der Welt
+			dauerhaft zu lösen, mit minimalen Umweltbelastungen.</p>
+		<p>Technologische Herausforderungen: Um dieses Potenzial auszuschöpfen, müssen jedoch erhebliche technische
+			Herausforderungen überwunden werden, insbesondere die Stabilisierung des Plasmas, die Entwicklung geeigneter
+			Materialien und die Effizienzsteigerung der Energieerzeugung.</p>
+		<p>Ausblick: Die Kernfusion könnte der Schlüssel zu einer sauberen und nachhaltigen Energiezukunft sein.</p>
+	</section>
+
+	<section id="folien10">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien11">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien12">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien13">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien14">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien15">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien16">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien17">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien18">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien19">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien20">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien21">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien22">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien23">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien24">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien25">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien26">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien27">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien28">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien29">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien30">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien31">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien32">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien33">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien34">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien35">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien36">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien37">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien38">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien39">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien40">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien41">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien42">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien43">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien44">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien45">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien46">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien47">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien48">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien49">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="folien50">
+		<h2>Test</h2>
+		<p>Inhalt</p>
+	</section>
+
+	<section id="quellen">
+		<h2>Quellen</h2>
+		<p>1. Internationale Energieagentur (IEA): <a href="https://www.iea.org">www.iea.org</a></p>
+		<p>2. ITER Organisation: <a href="https://www.iter.org">www.iter.org</a></p>
+		<p>3. Deutsches Zentrum für Luft- und Raumfahrt (DLR): <a href="https://www.dlr.de">www.dlr.de</a></p>
+		<p>4. Wissenschaftsjahr 2023: <a href="https://www.wissenschaftsjahr.de">www.wissenschaftsjahr.de</a></p>
+		<p>5. Max-Planck-Institut für Plasmaphysik: <a href="https://www.ipp.mpg.de/">www.ipp.mpg.de</a></p>
+	</section>
+
+	<div id="navigationButtons">
+		<button onclick="nextSlide()">&gt;</button>
+		<button onclick="prevSlide()">&lt;</button>
+	</div>
+
+	<script>
+		const slides = ["folien1", "folien2", "folien3", "folien4", "folien5", "folien6", "folien7", "folien8", "folien9", "folien10", "folien11", "folien12", "folien13", "folien14", "folien15", "folien16", "folien17", "folien18", "folien19", "folien20", "folien21", "folien22", "folien23", "folien24", "folien25", "folien26", "folien27", "folien28", "folien29", "folien30", "folien31", "folien32", "folien33", "folien34", "folien35", "folien36", "folien37", "folien38", "folien39", "folien40", "folien41", "folien42", "folien43", "folien44", "folien45", "folien46", "folien47", "folien48", "folien49", "folien50", "quellen"];
+		let currentIndex = 0;
+		function showSection(sectionId) {
+			slides.forEach(function(id) {
+				const sec = document.getElementById(id);
+				if (sec) {
+					sec.classList.remove("active");
+				}
+			});
+			const activeSec = document.getElementById(sectionId);
+			if (activeSec) {
+				activeSec.classList.add("active");
+			}
+			currentIndex = slides.indexOf(sectionId);
+			if (currentIndex !== -1) {
+				document.getElementById("slideNumber").innerText = "Folie " + (currentIndex + 1) + " von " + slides.length;
+			}
+		}
+		function nextSlide() {
+			if (currentIndex < slides.length - 1) {
+				showSection(slides[currentIndex + 1]);
+			}
+		}
+		function prevSlide() {
+			if (currentIndex > 0) {
+				showSection(slides[currentIndex - 1]);
+			}
+		}
+		document.addEventListener("DOMContentLoaded", () => {
+			showSection("folien1");
+		});
+	</script>
+
+</body>
+
+</html>
