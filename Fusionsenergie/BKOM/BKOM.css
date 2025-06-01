@@ -105,3 +105,20 @@ footer {
 	text-align: center;
 	border-top: 1px solid #007BFF;
 }
+
+a, a:visited {
+	color: #ff4d4d;
+	transition: color 0.3s;
+}
+
+a:hover, a:active {
+	color: #ff1a1a;
+}
+
+sup a, sup a:visited {
+	color: #ff4d4d;
+}
+
+sup a:hover, sup a:active {
+	color: #ff1a1a;
+}
