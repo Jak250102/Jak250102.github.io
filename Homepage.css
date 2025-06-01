@@ -37,10 +37,14 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	list-style: none;
+	align-items: center;
 }
 
 nav ul li {
 	margin: 0 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 nav ul li a {
@@ -48,6 +52,13 @@ nav ul li a {
 	text-decoration: none;
 	font-weight: bold;
 	transition: color 0.3s ease;
+	border: 1.5px solid #007BFF;
+	border-radius: 8px;
+	padding: 4px 12px;
+	background: rgba(24,28,36,0.7);
+	box-shadow: 0 0 4px 0 #007BFF33;
+	text-align: center;
+	display: inline-block;
 }
 
 nav ul li a:hover {
