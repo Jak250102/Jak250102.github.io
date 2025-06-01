@@ -114,6 +114,27 @@ footer {
 	font-size: 0.9em;
 }
 
+a,
+a:visited {
+	color: #ff4d4d;
+	transition: color 0.3s;
+}
+
+a:hover,
+a:active {
+	color: #ff1a1a;
+}
+
+sup a,
+sup a:visited {
+	color: #ff4d4d;
+}
+
+sup a:hover,
+sup a:active {
+	color: #ff1a1a;
+}
+
 @media (max-width: 768px) {
 	nav ul {
 		flex-direction: column;
