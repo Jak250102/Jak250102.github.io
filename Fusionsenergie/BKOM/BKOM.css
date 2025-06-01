@@ -1,0 +1,107 @@
+body {
+	background: #181c24;
+	color: #e0e6ed;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background: rgba(30, 34, 44, 0.92);
+	padding: 10px 20px;
+	max-width: calc(100% - 60px);
+	margin-right: 50px;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+nav a {
+	color: #7db7ff;
+	text-decoration: none;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+nav a:hover {
+	color: #4a90e2;
+	background: #232836;
+}
+
+section {
+	display: none;
+	padding: 15px;
+	border-radius: 10px;
+	background: #232836;
+	color: #e0e6ed;
+	font-size: 16px;
+	margin: 20px auto;
+	margin-right: 50px;
+	min-height: 80vh;
+	margin-top: 10px;
+}
+
+h2 {
+	color: #7db7ff;
+	border-bottom: 2px solid #007BFF;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.active {
+	display: block;
+}
+
+#slideNumber {
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 14px;
+	color: #e0e6ed;
+	background: rgba(30, 34, 44, 0.92);
+	padding: 3px 8px;
+	border-radius: 3px;
+}
+
+#navigationButtons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	z-index: 10;
+}
+
+#navigationButtons button {
+	flex-grow: 1;
+	width: 40px;
+	text-align: center;
+	margin: 5px 0;
+	padding: 0 15px;
+	background: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navigationButtons button:hover {
+	background: #4a90e2;
+}
+
+footer {
+	color: #888;
+	background: #181c24;
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid #007BFF;
+}
