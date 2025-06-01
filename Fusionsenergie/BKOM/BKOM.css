@@ -132,6 +132,31 @@ sup a:hover,
 sup a:active {
 	color: #ff1a1a;
 }
+/* Bild mit Fußnote-Overlay (Folie 1) */
+.image-footnote-container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.image-footnote-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.image-footnote {
+	position: absolute;
+	right: 14px;
+	bottom: 12px;
+	background: rgba(24, 28, 36, 0.85);
+	color: #ff4d4d;
+	padding: 4px 10px 2px 10px;
+	border-radius: 6px;
+	font-size: 1.1em;
+	box-shadow: 0 2px 8px 0 #0005;
+	z-index: 2;
+}
 
 #folie2 h2 {
 	text-align: center;
@@ -159,61 +184,9 @@ sup a:active {
 	opacity: 0.25;
 }
 
-#folie2>* {
-	position: relative;
-	z-index: 1;
+#folie2 .centered-text {
+	text-align: center;
 }
 
-#folie2 .footnotes {
-	position: absolute;
-	left: 50%;
-	bottom: 32px;
-	transform: translateX(-50%);
-	width: 90%;
-	background: rgba(24, 28, 36, 0.85);
-	margin: 0;
-	padding: 12px 18px 8px 18px;
-	border-radius: 8px;
-	z-index: 2;
-	box-shadow: 0 4px 16px 0 #0004;
-}
 
-#folie2 .footnotes hr {
-	display: none;
-}
 
-#folie2 .footnotes ol {
-	margin: 0;
-	padding-left: 1.2em;
-}
-
-#folie2 .footnotes li {
-	color: #e0e6ed;
-	font-size: 0.95em;
-}
-
-/* Bild mit Fußnote-Overlay (Folie 1) */
-.image-footnote-container {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-}
-
-.image-footnote-container img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.image-footnote {
-	position: absolute;
-	right: 14px;
-	bottom: 12px;
-	background: rgba(24, 28, 36, 0.85);
-	color: #ff4d4d;
-	padding: 4px 10px 2px 10px;
-	border-radius: 6px;
-	font-size: 1.1em;
-	box-shadow: 0 2px 8px 0 #0005;
-	z-index: 2;
-}
