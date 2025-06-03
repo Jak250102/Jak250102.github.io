@@ -181,7 +181,7 @@ sup a:active {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/NuclearFusion-Iter.png') no-repeat center 70%/cover;
-	opacity: 0.25;
+	opacity: 0.15;
 }
 
 #folie2 .centered-text {
@@ -230,6 +230,92 @@ sup a:active {
 }
 
 #folie7 > * {
+	position: relative;
+	z-index: 1;
+}
+#folie3 {
+	position: relative;
+	overflow: hidden;
+}
+
+#folie3::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url('Images/w7x_torus_aussen.jpg') no-repeat center 70%/cover;
+	opacity: 0.22;
+}
+
+#folie3 > * {
+	position: relative;
+	z-index: 1;
+}
+#folie4 {
+	position: relative;
+	overflow: hidden;
+}
+
+#folie4::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url('Images/w7x_island_chain.jpg') no-repeat center 70%/cover;
+	opacity: 0.22;
+}
+
+#folie4 > * {
+	position: relative;
+	z-index: 1;
+}
+
+#folie5 {
+	position: relative;
+	overflow: hidden;
+}
+
+#folie5::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url('Images/plasmagefaess_w7x_2021_ohne_person.jpg') no-repeat center 70%/cover;
+	opacity: 0.22;
+}
+
+#folie5 > * {
+	position: relative;
+	z-index: 1;
+}
+
+#folie15 {
+	position: relative;
+	overflow: hidden;
+}
+
+#folie15::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url('Images/torus_w7x_2021.jpg') no-repeat center 70%/cover;
+	opacity: 0.22;
+}
+
+#folie15 > * {
 	position: relative;
 	z-index: 1;
 }
