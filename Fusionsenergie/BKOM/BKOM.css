@@ -1,4 +1,4 @@
-/* ########################### Algemein ################################# */
+/* ########################### Allgemein ################################# */
 body {
 	background: #181c24;
 	color: #e0e6ed;
@@ -8,6 +8,44 @@ body {
 	padding: 0;
 }
 
+h2 {
+	color: #7db7ff;
+	border-bottom: 2px solid #007BFF;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+a,
+a:visited {
+	color: #ff4d4d;
+	transition: color 0.3s;
+}
+
+a:hover,
+a:active {
+	color: #ff1a1a;
+}
+
+sup a,
+sup a:visited {
+	color: #ff4d4d;
+}
+
+sup a:hover,
+sup a:active {
+	color: #ff1a1a;
+}
+
+.active {
+	display: block;
+}
+
+/* ########################### Navigation ################################ */
 nav {
 	background: rgba(30, 34, 44, 0.92);
 	padding: 10px 20px;
@@ -29,6 +67,7 @@ nav a:hover {
 	background: #232836;
 }
 
+/* ########################### Section/Slides ############################ */
 section {
 	display: none;
 	padding: 15px;
@@ -42,28 +81,7 @@ section {
 	margin-top: 10px;
 }
 
-h2 {
-	color: #7db7ff;
-	border-bottom: 2px solid #007BFF;
-	font-size: 30px;
-	margin-bottom: 10px;
-}
-
-p {
-	line-height: 1.6;
-	margin-bottom: 10px;
-}
-
-.active {
-	display: block;
-}
-
-.HGBild {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-
+/* ########################### Slide Number ############################## */
 #slideNumber {
 	position: fixed;
 	bottom: 24px;
@@ -78,6 +96,7 @@ p {
 	pointer-events: none;
 }
 
+/* ########################### Navigation Buttons ######################## */
 #navigationButtons {
 	display: flex;
 	flex-direction: column;
@@ -107,35 +126,7 @@ p {
 	background: #4a90e2;
 }
 
-footer {
-	color: #888;
-	background: #181c24;
-	padding: 10px;
-	text-align: center;
-	border-top: 1px solid #007BFF;
-}
-
-a,
-a:visited {
-	color: #ff4d4d;
-	transition: color 0.3s;
-}
-
-a:hover,
-a:active {
-	color: #ff1a1a;
-}
-
-sup a,
-sup a:visited {
-	color: #ff4d4d;
-}
-
-sup a:hover,
-sup a:active {
-	color: #ff1a1a;
-}
-/* Bild mit Fußnote-Overlay (Folie 1) */
+/* ########################### Bild & Fußnote Overlay #################### */
 .image-footnote-container {
 	position: relative;
 	display: flex;
@@ -153,7 +144,7 @@ sup a:active {
 	max-width: 900px;
 }
 
-/* Neuer Container für die Fußnote exakt über dem Bild */
+/* Overlay für Fußnote exakt über dem Bild */
 .image-footnote-overlay {
 	position: absolute;
 	bottom: 0;
@@ -180,6 +171,7 @@ sup a:active {
 	pointer-events: auto;
 }
 
+/* Fußnote für Slides mit Hintergrundbild */
 .bg-footnote {
 	position: absolute;
 	right: 24px;
@@ -194,24 +186,23 @@ sup a:active {
 	pointer-events: auto;
 }
 
-/* Stelle sicher, dass die betreffenden Sections position:relative haben */
-#folie3, #folie4, #folie5, #folie7, #folie15 {
-	position: relative;
-}
-#folie2 h2 {
-	text-align: center;
-	font-size: 2.2em;
-}
+/* ########################### Spezial: Slides ########### */
 
-#folie2 p {
-	font-size: 1.25em;
-}
 
 #folie2 {
 	position: relative;
 	overflow: hidden;
 }
-
+#folie2 h2 {
+	text-align: center;
+	font-size: 2.2em;
+}
+#folie2 p {
+	font-size: 1.25em;
+}
+#folie2 .centered-text {
+	text-align: center;
+}
 #folie2::before {
 	content: '';
 	position: absolute;
@@ -224,69 +215,23 @@ sup a:active {
 	opacity: 0.15;
 }
 
-#folie2 .centered-text {
-	text-align: center;
-}
-#folie3 li {
-
-	font-size: 1.2em;
-
-}
-#folie4 h2 {
-	text-align: center;
-	font-size: 4.2em;
-	border-bottom: none;
-	margin-top: 18vh;
-}
-#folie5 h2 {
-	text-align: center;
-	font-size: 4.2em;
-	border-bottom: none;
-	margin-top: 18vh;
-}
-#folie7 h3 {
-	text-align: center;
-	font-size: 2.5em;
-		color: #7db7ff;
-
-
-
-}
-#folie7 {
+#folie3 {
 	position: relative;
 	overflow: hidden;
-}
-
-#folie7::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 0;
-	background: url('Images/Sonne.png') no-repeat center 70%/cover;
-	opacity: 0.22;
-}
-
-#folie7 > * {
-	position: relative;
-	z-index: 1;
 }
 #folie3 h2 {
 	text-align: center;
 	font-size: 2.2em;
 }
-
 #folie3 p {
 	font-size: 1.25em;
 }
-
-#folie3 {
-	position: relative;
-	overflow: hidden;
+#folie3 .centered-text {
+	text-align: center;
 }
-
+#folie3 li {
+	font-size: 1.2em;
+}
 #folie3::before {
 	content: '';
 	position: absolute;
@@ -298,11 +243,29 @@ sup a:active {
 	background: url('Images/w7x_torus_aussen.jpg') no-repeat center 70%/cover;
 	opacity: 0.15;
 }
-
-#folie3 .centered-text {
+#folie3 > *, #folie4 > *, #folie5 > *, #folie7 > *, #folie15 > * {
+	position: relative;
+	z-index: 2;
+}
+#folie4 {
+	position: relative;
+	overflow: hidden;
+}
+#folie4 h2 {
+	text-align: center;
+	font-size: 4.2em;
+	border-bottom: none;
+	margin-top: 18vh;
+}
+#folie4 p {
+	font-size: 1.25em;
+}
+#folie4 .centered-text {
 	text-align: center;
 }
-
+#folie4 li {
+	font-size: 1.2em;
+}
 #folie4::before {
 	content: '';
 	position: absolute;
@@ -312,19 +275,19 @@ sup a:active {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/w7x_island_chain.jpg') no-repeat center 70%/cover;
-	opacity: 0.22;
-}
-
-#folie4 > * {
-	position: relative;
-	z-index: 1;
+	opacity: 0.15;
 }
 
 #folie5 {
 	position: relative;
 	overflow: hidden;
 }
-
+#folie5 h2 {
+	text-align: center;
+	font-size: 4.2em;
+	border-bottom: none;
+	margin-top: 18vh;
+}
 #folie5::before {
 	content: '';
 	position: absolute;
@@ -336,8 +299,32 @@ sup a:active {
 	background: url('Images/plasmagefaess_w7x_2021_ohne_person.jpg') no-repeat center 70%/cover;
 	opacity: 0.22;
 }
-
 #folie5 > * {
+	position: relative;
+	z-index: 1;
+}
+
+#folie7 {
+	position: relative;
+	overflow: hidden;
+}
+#folie7 h3 {
+	text-align: center;
+	font-size: 2.5em;
+	color: #7db7ff;
+}
+#folie7::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: url('Images/Sonne.png') no-repeat center 70%/cover;
+	opacity: 0.22;
+}
+#folie7 > * {
 	position: relative;
 	z-index: 1;
 }
@@ -346,7 +333,6 @@ sup a:active {
 	position: relative;
 	overflow: hidden;
 }
-
 #folie15::before {
 	content: '';
 	position: absolute;
@@ -358,17 +344,22 @@ sup a:active {
 	background: url('Images/torus_w7x_2021.jpg') no-repeat center 70%/cover;
 	opacity: 0.22;
 }
-
 #folie15 > * {
 	position: relative;
 	z-index: 1;
 }
-
 #folie16 h2 {
 	text-align: center;
 	font-size: 4.2em;
 	border-bottom: none;
 	margin-top: 18vh;
 }
+/* ########################### Sonstiges ################################ */
+.HGBild {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
 
 
