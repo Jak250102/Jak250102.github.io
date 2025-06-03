@@ -88,7 +88,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 9999;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0, 0, 0, 0.7);
 	color: #fff;
 	padding: 8px 18px;
 	border-radius: 8px;
@@ -193,16 +193,20 @@ section {
 	position: relative;
 	overflow: hidden;
 }
+
 #folie2 h2 {
 	text-align: center;
 	font-size: 2.2em;
 }
+
 #folie2 p {
 	font-size: 1.25em;
 }
+
 #folie2 .centered-text {
 	text-align: center;
 }
+
 #folie2::before {
 	content: '';
 	position: absolute;
@@ -215,23 +219,26 @@ section {
 	opacity: 0.15;
 }
 
+/* ################################ */
+
 #folie3 {
 	position: relative;
 	overflow: hidden;
 }
+
 #folie3 h2 {
-	text-align: center;
+	/* text-align: center; */
 	font-size: 2.2em;
 }
+
 #folie3 p {
 	font-size: 1.25em;
 }
+
 #folie3 .centered-text {
 	text-align: center;
 }
-#folie3 li {
-	font-size: 1.2em;
-}
+
 #folie3::before {
 	content: '';
 	position: absolute;
@@ -243,29 +250,32 @@ section {
 	background: url('Images/w7x_torus_aussen.jpg') no-repeat center 70%/cover;
 	opacity: 0.15;
 }
-#folie3 > *, #folie4 > *, #folie5 > *, #folie7 > *, #folie15 > * {
-	position: relative;
-	z-index: 2;
-}
+
+/* ################################ */
 #folie4 {
 	position: relative;
 	overflow: hidden;
 }
+
 #folie4 h2 {
 	text-align: center;
 	font-size: 4.2em;
 	border-bottom: none;
 	margin-top: 18vh;
 }
+
 #folie4 p {
 	font-size: 1.25em;
 }
+
 #folie4 .centered-text {
 	text-align: center;
 }
+
 #folie4 li {
 	font-size: 1.2em;
 }
+
 #folie4::before {
 	content: '';
 	position: absolute;
@@ -278,16 +288,31 @@ section {
 	opacity: 0.15;
 }
 
+/* ################################ */
 #folie5 {
 	position: relative;
 	overflow: hidden;
 }
+
 #folie5 h2 {
 	text-align: center;
 	font-size: 4.2em;
 	border-bottom: none;
 	margin-top: 18vh;
 }
+
+#folie5 p {
+	font-size: 1.25em;
+}
+
+#folie5 .centered-text {
+	text-align: center;
+}
+
+#folie5 li {
+	font-size: 1.2em;
+}
+
 #folie5::before {
 	content: '';
 	position: absolute;
@@ -297,22 +322,40 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/plasmagefaess_w7x_2021_ohne_person.jpg') no-repeat center 70%/cover;
-	opacity: 0.22;
-}
-#folie5 > * {
-	position: relative;
-	z-index: 1;
+	opacity: 0.15;
 }
 
+/* ################################ */
 #folie7 {
 	position: relative;
 	overflow: hidden;
 }
-#folie7 h3 {
+
+/* #folie7 h2 {
 	text-align: center;
-	font-size: 2.5em;
-	color: #7db7ff;
+	font-size: 4.2em;
+	border-bottom: none;
+	margin-top: 18vh;
+} */
+#folie7 h3 {
+	font-size: 2em;
+	text-align: center;
+
+
 }
+
+#folie7 p {
+	font-size: 1.25em;
+}
+
+#folie7 .centered-text {
+	text-align: center;
+}
+
+#folie7 li {
+	font-size: 1.2em;
+}
+
 #folie7::before {
 	content: '';
 	position: absolute;
@@ -322,17 +365,28 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/Sonne.png') no-repeat center 70%/cover;
-	opacity: 0.22;
-}
-#folie7 > * {
-	position: relative;
-	z-index: 1;
+	opacity: 0.1;
 }
 
+/* ################################ */
 #folie15 {
 	position: relative;
 	overflow: hidden;
 }
+
+#folie15 h2 {
+	/* text-align: center; */
+	font-size: 2.2em;
+}
+
+#folie15 p {
+	font-size: 1.25em;
+}
+
+#folie15 .centered-text {
+	text-align: center;
+}
+
 #folie15::before {
 	content: '';
 	position: absolute;
@@ -342,24 +396,20 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/torus_w7x_2021.jpg') no-repeat center 70%/cover;
-	opacity: 0.22;
+	opacity: 0.15;
 }
-#folie15 > * {
-	position: relative;
-	z-index: 1;
-}
+
+/* ################################ */
 #folie16 h2 {
 	text-align: center;
 	font-size: 4.2em;
 	border-bottom: none;
 	margin-top: 18vh;
 }
+
 /* ########################### Sonstiges ################################ */
 .HGBild {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
 }
-
-
-
