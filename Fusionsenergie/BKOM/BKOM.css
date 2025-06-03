@@ -137,20 +137,27 @@ sup a:active {
 /* Bild mit Fußnote-Overlay (Folie 1) */
 .image-footnote-container {
 	position: relative;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .image-footnote-container img {
 	display: block;
-	width: 100%;
+	width: 70%;
 	height: auto;
+	max-width: 900px;
 }
 
 .image-footnote {
 	position: absolute;
-	right: 14px;
-	bottom: 12px;
+	/* Position relativ zum Bild, nicht zum Container */
+	right: 16%;
+	bottom: 8%;
+	/* ...existing code... */
 	background: rgba(24, 28, 36, 0.85);
 	color: #ff4d4d;
 	padding: 4px 10px 2px 10px;
