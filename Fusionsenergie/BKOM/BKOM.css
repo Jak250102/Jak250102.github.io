@@ -320,6 +320,11 @@ sup a:active {
 	z-index: 1;
 }
 
-
+#folie16 h2 {
+	text-align: center;
+	font-size: 4.2em;
+	border-bottom: none;
+	margin-top: 18vh;
+}
 
 
