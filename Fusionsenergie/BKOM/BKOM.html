@@ -328,7 +328,7 @@
 	</div>
 
 	<script>
-		const slides = ["folie1", "folie2", "folie3", "folie4", "folie5", "folie6", "folie7", "folie8", "folie9", "folie10", "folie11", "folie12", "folie13", "folie14", "folie15", "folie16", "folie17", "folie18", "folie19", "folie20", "folie21", "folie22", "folie23", "folie24", "folie25", "folie26", "folie27", "folie28", "folie29", "folie30", "folie31", "folie32", "folie33", "folie34", "folie35", "folie36", "folie37", "folie38", "folie39", "folie40", "folie41", "folie42", "folie43", "folie44", "folie45", "folie46", "folie47", "folie48", "folie49", "folie50", "quellen"];
+		const slides = ["folie1", "folie2", "folie3", "folie4", "folie5", "folie6", "folie7", "folie8", "folie9", "folie10", "folie11", "folie12", "folie13", "folie14", "folie15", "folie16", "folie17", "quellen"];
 		let currentIndex = 0;
 		function showSection(sectionId) {
 			slides.forEach(function (id) {
@@ -349,11 +349,17 @@
 		function nextSlide() {
 			if (currentIndex < slides.length - 1) {
 				showSection(slides[currentIndex + 1]);
+			} else {
+				// Springe von "quellen" wieder zu "folie1"
+				showSection(slides[0]);
 			}
 		}
 		function prevSlide() {
 			if (currentIndex > 0) {
 				showSection(slides[currentIndex - 1]);
+			} else {
+				// Springe von "folie1" zu "quellen"
+				showSection(slides[slides.length - 1]);
 			}
 		}
 		document.addEventListener("DOMContentLoaded", () => {
