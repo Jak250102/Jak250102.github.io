@@ -1,3 +1,4 @@
+/* ########################### Algemein ################################# */
 body {
 	background: #181c24;
 	color: #e0e6ed;
@@ -152,12 +153,23 @@ sup a:active {
 	max-width: 900px;
 }
 
-.image-footnote {
+/* Neuer Container für die Fußnote exakt über dem Bild */
+.image-footnote-overlay {
 	position: absolute;
-	/* Position relativ zum Bild, nicht zum Container */
-	right: 16%;
-	bottom: 8%;
-	/* ...existing code... */
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	max-width: 900px;
+	height: 100%;
+	pointer-events: none;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.image-footnote {
+	position: static;
+	margin: 0 18px 12px 0;
 	background: rgba(24, 28, 36, 0.85);
 	color: #ff4d4d;
 	padding: 4px 10px 2px 10px;
@@ -165,8 +177,27 @@ sup a:active {
 	font-size: 1.1em;
 	box-shadow: 0 2px 8px 0 #0005;
 	z-index: 2;
+	pointer-events: auto;
 }
 
+.bg-footnote {
+	position: absolute;
+	right: 24px;
+	bottom: 18px;
+	background: rgba(24, 28, 36, 0.85);
+	color: #ff4d4d;
+	padding: 4px 10px 2px 10px;
+	border-radius: 6px;
+	font-size: 1.1em;
+	box-shadow: 0 2px 8px 0 #0005;
+	z-index: 2;
+	pointer-events: auto;
+}
+
+/* Stelle sicher, dass die betreffenden Sections position:relative haben */
+#folie3, #folie4, #folie5, #folie7, #folie15 {
+	position: relative;
+}
 #folie2 h2 {
 	text-align: center;
 	font-size: 2.2em;
@@ -242,6 +273,15 @@ sup a:active {
 	position: relative;
 	z-index: 1;
 }
+#folie3 h2 {
+	text-align: center;
+	font-size: 2.2em;
+}
+
+#folie3 p {
+	font-size: 1.25em;
+}
+
 #folie3 {
 	position: relative;
 	overflow: hidden;
@@ -256,16 +296,11 @@ sup a:active {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/w7x_torus_aussen.jpg') no-repeat center 70%/cover;
-	opacity: 0.22;
+	opacity: 0.15;
 }
 
-#folie3 > * {
-	position: relative;
-	z-index: 1;
-}
-#folie4 {
-	position: relative;
-	overflow: hidden;
+#folie3 .centered-text {
+	text-align: center;
 }
 
 #folie4::before {
