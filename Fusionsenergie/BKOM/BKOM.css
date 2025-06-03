@@ -79,6 +79,8 @@ section {
 	margin-right: 50px;
 	min-height: 80vh;
 	margin-top: 10px;
+	position: relative;    /* hinzugefügt */
+	z-index: 1;            /* hinzugefügt */
 }
 
 /* ########################### Slide Number ############################## */
@@ -212,7 +214,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/NuclearFusion-Iter.png') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 /* ################################ */
@@ -244,7 +246,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/w7x_torus_aussen.jpg') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 /* ################################ */
@@ -281,7 +283,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/w7x_island_chain.jpg') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 /* ################################ */
@@ -318,7 +320,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/plasmagefaess_w7x_2021_ohne_person.jpg') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 /* ################################ */
@@ -392,7 +394,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/torus_w7x_2021.jpg') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 /* ################################ */
@@ -429,7 +431,7 @@ section {
 	height: 100%;
 	z-index: 0;
 	background: url('Images/w7x_modul.jpg') no-repeat center 70%/cover;
-	opacity: 0.15;
+	opacity: 0.1;
 }
 
 
