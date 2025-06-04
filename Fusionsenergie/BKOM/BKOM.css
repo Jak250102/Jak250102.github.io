@@ -83,6 +83,7 @@ section {
 	position: relative;
 	z-index: 1;
 	transition: box-shadow 0.2s;
+	margin-top: 2px; /* reduziert von 10px auf 2px */
 }
 
 section.active {
@@ -303,6 +304,9 @@ section ol li::before {
 /* Für Folie 1 und 11: Fußnote weiter nach links */
 #folie1 .image-footnote {
 	right: 18%;
+}
+#folie8 .image-footnote {
+	right: 7%;
 }
 #folie11 .image-footnote {
 	right: 32%; /* weiter nach links, je nach Bildbreite anpassen */
