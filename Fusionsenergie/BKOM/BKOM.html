@@ -23,14 +23,15 @@
 		<a href="javascript:void(0);" onclick="showSection('folie9')">Nr.9</a>
 		<a href="javascript:void(0);" onclick="showSection('folie10')">Nr.10</a>
 		<a href="javascript:void(0);" onclick="showSection('folie11')">Nr.11</a>
-		<a href="javascript:void(0);" onclick="showSection('folie12a')">Nr.12</a>
-		<a href="javascript:void(0);" onclick="showSection('folie12')">Nr.13</a>
-		<a href="javascript:void(0);" onclick="showSection('folie13')">Nr.14</a>
-		<a href="javascript:void(0);" onclick="showSection('folie14')">Nr.15</a>
-		<a href="javascript:void(0);" onclick="showSection('folie15')">Nr.16</a>
-		<a href="javascript:void(0);" onclick="showSection('folie16')">Nr.17</a>
-		<a href="javascript:void(0);" onclick="showSection('folie17')">Nr.18</a>
+		<!-- <a href="javascript:void(0);" onclick="showSection('folie12a')">Nr.12</a>
+		<a href="javascript:void(0);" onclick="showSection('folie12')">Nr.13</a> -->
+		<a href="javascript:void(0);" onclick="showSection('folie13')">Nr.12</a>
+		<!-- <a href="javascript:void(0);" onclick="showSection('folie14')">Nr.13</a> -->
+		<a href="javascript:void(0);" onclick="showSection('folie15')">Nr.13</a>
+		<a href="javascript:void(0);" onclick="showSection('folie16')">Nr.14</a>
 		<a href="javascript:void(0);" onclick="showSection('quellen')">Quellen</a>
+		<a href="javascript:void(0);" onclick="showSection('folie17')">Nr.15</a>
+
 	</nav>
 
 	<div id="slideNumber"></div>
@@ -58,11 +59,12 @@
 		<h2>Agenda:</h2>
 		<ul>
 			<li>Grundlagen</li>
-			<li>Geschichte</li>
+			<li>Meilensteine der Fusion</li>
 			<li>Fusionsreaktionen im Detail</li>
 			<li>Forschungsobjekt ITER</li>
 			<li>Zukunftsperspektiven der Fusionsenergie</li>
 			<li>Fazit</li>
+			<li>Quellen</li>
 			<li>Fragen</li>
 		</ul>
 		<sup class="bg-footnote" id="bgfnref:5"><a href="#fn:5">5</a></sup>
@@ -271,7 +273,6 @@
 		<h3>Vorteile</h3>
 		<h3>Nachteile</h3>
 		<h3>Zeitperspektiven</h3>
-		<h3>Herausforderungen</h3>
 		<h3>Möglichkeiten</h3>
 		<sup class="bg-footnote" id="bgfnref:5d"><a href="#fn:5">5</a></sup>
 	</section>
@@ -361,7 +362,7 @@
 	</div>
 
 	<script>
-		const slides = ["folie1", "folie2", "folie3", "folie4", "folie5", "folie6", "folie7", "folie8", "folie9", "folie10", "folie11", "folie12a", "folie12", "folie13", "folie14", "folie15", "folie16", "folie17", "quellen"];
+		const slides = ["folie1", "folie2", "folie3", "folie4", "folie5", "folie6", "folie7", "folie8", "folie9", "folie10", "folie11", "folie13", "folie15", "folie16", "quellen", "folie17"];
 		let currentIndex = 0;
 		function showSection(sectionId) {
 			slides.forEach(function (id) {
