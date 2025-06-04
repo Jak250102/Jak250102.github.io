@@ -1,4 +1,4 @@
-#import "../../template/template.typ":*
+#import "template.typ":*
 #show: styling
 #head1[Fusionsenergie – Die Zukunft der Energie]
 
