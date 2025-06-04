@@ -352,7 +352,7 @@ section ol li::before {
 
 #folie2 h2 {
 	text-align: center;
-	font-size: 2.2em;
+	/* font-size: 2.2em; */
 }
 
 #folie2 p {
@@ -384,7 +384,7 @@ section ol li::before {
 
 #folie3 h2 {
 	/* text-align: center; */
-	font-size: 2.2em;
+	/* font-size: 2.2em; */
 }
 
 #folie3 p {
@@ -718,6 +718,24 @@ section ol li::before {
 
 .fragen-list-container {
 	flex: 1 1 0;
+}
+
+/* Iterative Slides Flexbox */
+.iter-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	margin-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+	.iter-flex-row {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
 }
 
 /* Responsive Anpassung */
