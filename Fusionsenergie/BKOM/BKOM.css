@@ -311,6 +311,10 @@ section ol li::before {
 #folie11 .image-footnote {
 	right: 32%; /* weiter nach links, je nach Bildbreite anpassen */
 }
+/* Fußnote auf Folie 13 weiter nach links, nur für das untere Bild */
+#folie13 .image-footnote.unten {
+	right: 17%; /* Wert ggf. weiter anpassen, z.B. 28%, 35% */
+}
 
 .image-footnote {
 	position: absolute;
@@ -382,10 +386,7 @@ section ol li::before {
 	overflow: hidden;
 }
 
-#folie3 h2 {
-	/* text-align: center; */
-	/* font-size: 2.2em; */
-}
+
 
 #folie3 p {
 	font-size: 1.25em;
@@ -700,8 +701,8 @@ section ol li::before {
 }
 
 .qr-code-img {
-	width: 160px;
-	max-width: 100%;
+	/* width: 240px; */
+	max-width: 120%;
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px 0 #0005;
@@ -713,11 +714,14 @@ section ol li::before {
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 40px;
+	gap: 16px; /* vorher 40px, jetzt enger */
 }
 
 .fragen-list-container {
 	flex: 1 1 0;
+	max-width: 50%;
+	align-self: left;
+	margin-left: -20%;
 }
 
 /* Iterative Slides Flexbox */
@@ -745,7 +749,8 @@ section ol li::before {
 		align-items: center;
 		gap: 24px;
 	}
-	.qr-code-container {
+	/* .qr-code-container {
 		max-width: 90vw;
-	}
+		margin-left: 100px;
+	} */
 }
