@@ -83,6 +83,58 @@ section {
 	z-index: 1;            /* hinzugefügt */
 }
 
+/* Zentriere alle Texte in den Slides */
+section, section * {
+	text-align: center;
+}
+
+/* Für Listen: linksbündig, aber in der Mitte der Section */
+section ul, section ol {
+	text-align: left;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding: 24px 36px 24px 48px;
+	background: rgba(30, 34, 44, 0.7);
+	border-radius: 12px;
+	box-shadow: 0 2px 12px 0 #0003;
+	list-style: none;
+}
+
+section ul li, section ol li {
+	margin-bottom: 16px;
+	padding-left: 0.5em;
+	position: relative;
+}
+
+section ul li::before {
+	content: "•";
+	color: #7db7ff;
+	font-size: 1.2em;
+	position: absolute;
+	left: -1.2em;
+	top: 0.1em;
+}
+
+section ol li {
+	counter-increment: customlist;
+}
+
+section ol {
+	counter-reset: customlist;
+}
+
+section ol li::before {
+	content: counter(customlist) ".";
+	color: #7db7ff;
+	font-weight: bold;
+	position: absolute;
+	left: -1.5em;
+	top: 0.1em;
+}
+
 /* ########################### Slide Number ############################## */
 #slideNumber {
 	position: fixed;
@@ -441,4 +493,71 @@ section {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+}
+
+/* Fusion Tabelle Styling */
+.fusion-table-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 0;
+}
+
+.fusion-table {
+	border-collapse: separate;
+	border-spacing: 0;
+	background: #232836;
+	color: #e0e6ed;
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow: 0 4px 24px 0 #0004;
+	min-width: 600px;
+	max-width: 900px;
+	width: 90%;
+}
+
+.fusion-table th, .fusion-table td {
+	padding: 16px 18px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.fusion-table th {
+	background: linear-gradient(90deg, #232836 80%, #2a3140 100%);
+	color: #7db7ff;
+	font-size: 1.2em;
+	border-bottom: 2px solid #007BFF;
+}
+
+.fusion-table tr:nth-child(even) td {
+	background: rgba(30, 34, 44, 0.85);
+}
+
+.fusion-table tr:nth-child(odd) td {
+	background: rgba(36, 40, 54, 0.85);
+}
+
+.fusion-table td {
+	border-bottom: 1px solid #2a3140;
+}
+
+.fusion-table tr:last-child td {
+	border-bottom: none;
+}
+
+.fusion-table th:first-child,
+.fusion-table td:first-child {
+	text-align: left;
+	color: #7db7ff;
+	font-weight: bold;
+	background: rgba(30, 34, 44, 0.92);
+}
+
+.fusion-table th, .fusion-table td {
+	border-right: 1px solid #2a3140;
+}
+
+.fusion-table th:last-child,
+.fusion-table td:last-child {
+	border-right: none;
 }
