@@ -667,3 +667,67 @@ section ol li::before {
 .fusion-table td:last-child {
 	border-right: none;
 }
+
+/* ########################### Flexbox und QR-Code Styling ########################### */
+.fusion-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.qr-code-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background: rgba(30, 34, 44, 0.7);
+	border-radius: 14px;
+	box-shadow: 0 2px 12px 0 #0003;
+	padding: 24px 18px 18px 18px;
+	margin-top: 0;
+	min-width: 200px;
+	max-width: 260px;
+}
+
+.qr-code-container h3 {
+	color: #7db7ff;
+	font-size: 1.2em;
+	margin-bottom: 18px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.qr-code-img {
+	width: 160px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 #0005;
+}
+
+/* ########################### Fragen Flexbox Styling ########################### */
+.fragen-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.fragen-list-container {
+	flex: 1 1 0;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 900px) {
+	.fusion-flex-row {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+	.qr-code-container {
+		max-width: 90vw;
+	}
+}
