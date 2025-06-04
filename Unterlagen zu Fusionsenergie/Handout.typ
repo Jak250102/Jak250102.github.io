@@ -28,12 +28,11 @@ Klasse: FTM1\
 
 = Verfügbarkeit von Brennstoffen für die Kernfusion
 
-= Funktionsweise eines Reaktors
-
-= Interessante Forschungsobjekte
+= ITER
 
 = Zukunftsperspektiven
 
+= Fazit
 #head1("Quellen:")
 
 *Quellen Informationen*

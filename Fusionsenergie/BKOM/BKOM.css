@@ -70,25 +70,122 @@ nav a:hover {
 /* ########################### Section/Slides ############################ */
 section {
 	display: none;
-	padding: 15px;
-	border-radius: 10px;
+	padding: 32px 2vw 32px 2vw;
+	border-radius: 18px;
+	background: linear-gradient(120deg, #232836 80%, #1a1d25 100%);
+	color: #e0e6ed;
+	font-size: 18px;
+	margin: 32px auto 32px auto;
+	/* entferne margin-right für weniger Platz links */
+	min-height: 70vh;
+	max-width: 1100px;
+	box-shadow: 0 6px 32px 0 #0007;
+	border: 1.5px solid #2a3140;
+	position: relative;
+	z-index: 1;
+	transition: box-shadow 0.2s;
+}
+
+section.active {
+	display: block;
+	animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(30px);}
+	to { opacity: 1; transform: translateY(0);}
+}
+
+/* Einheitliche Überschriften */
+section h2 {
+	color: #7db7ff;
+	border-bottom: 2px solid #007BFF;
+	font-size: 2.7em;
+	margin-bottom: 18px;
+	margin-top: 0;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: none;
+	box-shadow: none;
+}
+
+/* Einheitliche Unterüberschriften */
+section h3 {
+	color: #7db7ff;
+	font-size: 1.7em;
+	margin: 18px 0 10px 0;
+	font-weight: 600;
+}
+
+/* Einheitliche Absätze */
+section p {
+	line-height: 1.7;
+	font-size: 1.15em;
+	margin-bottom: 18px;
+}
+
+/* Einheitliche Tabellen */
+section table {
+	margin: 0 auto 24px auto;
+	border-collapse: separate;
+	border-spacing: 0;
 	background: #232836;
 	color: #e0e6ed;
-	font-size: 16px;
-	margin: 20px auto;
-	margin-right: 50px;
-	min-height: 80vh;
-	margin-top: 10px;
-	position: relative;    /* hinzugefügt */
-	z-index: 1;            /* hinzugefügt */
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow: 0 4px 24px 0 #0004;
+	min-width: 320px;
+	max-width: 900px;
+	width: 95%;
 }
 
-/* Zentriere alle Texte in den Slides */
-section, section * {
+section th, section td {
+	padding: 16px 18px;
 	text-align: center;
+	font-size: 1.1em;
 }
 
-/* Für Listen: linksbündig, aber in der Mitte der Section */
+section th {
+	background: linear-gradient(90deg, #232836 80%, #2a3140 100%);
+	color: #7db7ff;
+	font-size: 1.2em;
+	border-bottom: 2px solid #007BFF;
+}
+
+section tr:nth-child(even) td {
+	background: rgba(30, 34, 44, 0.85);
+}
+
+section tr:nth-child(odd) td {
+	background: rgba(36, 40, 54, 0.85);
+}
+
+section td {
+	border-bottom: 1px solid #2a3140;
+}
+
+section tr:last-child td {
+	border-bottom: none;
+}
+
+section th:first-child,
+section td:first-child {
+	text-align: left;
+	color: #7db7ff;
+	font-weight: bold;
+	background: rgba(30, 34, 44, 0.92);
+}
+
+section th, section td {
+	border-right: 1px solid #2a3140;
+}
+
+section th:last-child,
+section td:last-child {
+	border-right: none;
+}
+
+/* Einheitliche Listen */
 section ul, section ol {
 	text-align: left;
 	display: inline-block;
@@ -188,7 +285,11 @@ section ol li::before {
 	align-items: center;
 	width: 100%;
 	max-width: 900px;
-	margin: 0 auto;
+	margin: 24px auto 24px auto;
+	background: rgba(30, 34, 44, 0.5);
+	border-radius: 12px;
+	box-shadow: 0 2px 12px 0 #0003;
+	padding: 16px 0;
 }
 
 .image-footnote-container img {
@@ -196,6 +297,8 @@ section ol li::before {
 	width: 70%;
 	height: auto;
 	max-width: 900px;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px 0 #0005;
 }
 
 /* Für Folie 1 und 11: Fußnote weiter nach links */
