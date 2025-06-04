@@ -1,15 +1,15 @@
-// #import "../../template/template.typ":*
-// #show: styling
-// #head1[Fusionsenergie – Die Zukunft der Energie]
+#import "template.typ":*
+#show: styling
+#head1[Fusionsenergie – Die Zukunft der Energie]
 
-// #hr
-// #outline(indent: auto,depth: 4)
-// #hr
+#hr
+#outline(indent: auto,depth: 4)
+#hr
 
 = Folie 1: Unsere Sonne:
 Ich habe euch heute ein Bild mitgebracht, mit etwas dass ihr alle kennt. Die Sonne. Sie ist das Zentrum und die Energiequelle unseres Sonnensystems. Doch das Wirft die Frage auf, wie erzeugt sie diese Energie? Die Antwort ist einfach: Durch Kernfusion. Und genau darum soll es heute gehen. Ich möchte euch die Grundlagen der Fusionsenergie näherbringen und erklären, warum sie eine vielversprechende Zukunftstechnologie ist.
 = Folie 2: Fusion: Energiequelle der Sterne
-
+Mein Name ist Jannik Muy und ich will euch heute das Thema Fusionsenergie mit fokus auf das Magnetische Einschlussverfahren näherbringen. Ich werde euch die Grundlagen der Fusionsenergie erklären, die Funktionsweise eines Fusionsreaktors und die Herausforderungen, die es zu bewältigen gilt. Außerdem werde ich auf aktuelle Forschungsprojekte eingehen und die Zukunftsperspektiven der Fusionsenergie beleuchten.
 = Folie 3: Agenda:
 
 = Folie 4: Was ist Fusion?
@@ -20,14 +20,13 @@ Ich habe euch heute ein Bild mitgebracht, mit etwas dass ihr alle kennt. Die Son
 = Folie 5: Warum brauchen wir Fusion?
 - Klimaschutz
 - Versorgungssicherheit
-- Unerschöpfliche Brennstoffe
+- Nahezu unerschöpfliche Brennstoffe
 - Hohe Energieausbeute
 - Geringer radioaktiver Abfall
-- Sicherheit
 - Unabhängigkeit
 - Umweltfreundlich
-- Innovation
 - Grundlastfähigkeit
+- Wachsender Energiehunger der Weltbevölkerung
 
 = Folie 6: Unterschied: Kernfusion vs. Kernspaltung
 
@@ -38,7 +37,7 @@ Ich habe euch heute ein Bild mitgebracht, mit etwas dass ihr alle kennt. Die Son
 = Folie 9: Meilensteine der Fusionsforschung
 
 = Folie 10: Fusionsablauf
-	- Jede sekunde verbrennen 600 mio Tonnen Wasserstoff zu 596 mio Tonnen Helium die Sonne wird also jede sekunde 4 mio Tonnen leichter
+	- Jede Sekunde verbrennen 600 mio Tonnen Wasserstoff zu 596 mio Tonnen Helium die Sonne wird also jede Sekunde 4 mio Tonnen leichter
 
 = Folie 11: Verfügbarkeit von Brennstoffen für die Kernfusion
 1. Deuterium (²H)
@@ -65,7 +64,7 @@ Verfügbarkeit:
 3. Lithium:
 - In Gestein, Salzseen und Meerwasser enthalten
 - Dient zur Tritiumproduktion im Reaktor
-- ungefähr 15 Millionen Tonnen Lithium Weltweit
+- ungefähr 30 Millionen Tonnen Lithium Weltweit
 
 
 Aus einem Glass Wasser 200ml lassen sich rund 800kWh Energie gewinnen, das reicht für einen Normalen Haushalt für rund 50 Tage. Dabei werden nur 0.15g Lithium benötigt
