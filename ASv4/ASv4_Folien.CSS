@@ -1,0 +1,106 @@
+/* Präsentations-Design: modern, groß, kontrastreich, für Beamer/Monitor */
+
+body {
+	background: #181c24;
+	color: #f3f6fa;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 2.2rem;
+	line-height: 1.4;
+} 
+
+
+
+h1, h2, h3 {
+	color: #90caf9;
+	margin-bottom: 32px;
+	text-shadow: 0 2px 8px #000, 0 0 2px #2196f3;
+}
+
+h1 {
+	font-size: 3.2rem;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-size: 3.4rem;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.7rem;
+}
+
+ul, ol {
+	margin: 32px 0 32px 40px;
+	font-size: 1.3em;
+}
+
+li {
+	margin-bottom: 18px;
+}
+
+img {
+	max-width: 70vw;
+	max-height: 60vh;
+	display: block;
+	margin: 40px auto 24px auto;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px #0008;
+	background: #222;
+}
+
+/* .image-footnote-container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 12px;
+}
+
+sup.image-footnote {
+	font-size: 1.1rem;
+	color: #ff5252;
+	margin-left: 8px;
+}
+
+a, a:visited {
+	color: #90caf9;
+	text-decoration: underline;
+	transition: color 0.2s;
+}
+
+a:hover, a:active {
+	color: #fff;
+	background: #2196f3;
+	border-radius: 4px;
+	padding: 2px 6px;
+}
+*/
+footer {
+	text-align: center;
+	color: #b0b8c1;
+	font-size: 1.1rem;
+	margin-top: 48px;
+} 
+	
+
+
+/* @media (max-width: 900px) {
+	main, .slide, section {
+		padding: 24px 4vw;
+	}
+	img {
+		max-width: 95vw;
+		max-height: 40vh;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 1.1rem;
+	}
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.3rem; }
+} */
