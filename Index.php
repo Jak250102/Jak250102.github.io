@@ -1,7 +1,8 @@
 <?php
-include("functions.php");
+include __DIR__ . '/functions.php';
 printHeader("Homepage Jannik Muy");
-includeIfExists("HTML/index.html");
-includeIfExists("HTML/footer.html");
 
+// Hier funktioniert es, weil includeIfExists() den kompletten Pfad baut
+includeIfExists('/HTML/index.html');
+includeIfExists('/HTML/footer.html');
 ?> 

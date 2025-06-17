@@ -1,6 +1,6 @@
 <?php
-include("functions.php");
+include("/functions.php");
 printHeader("Übersicht Fusionsenergie");
-includeIfExists("HTML/AS Übersicht.html");
-includeIfExists("HTML/footer.html");
+includeIfExists("/HTML/AS Übersicht.html");
+includeIfExists("/HTML/footer.html");
 ?>
