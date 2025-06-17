@@ -19,7 +19,7 @@ body {
 }
 
 header {
-	background: #23273a url('../Pictures/Hintergrund Profil.png') no-repeat center center;
+	background: #23273a url('/Pictures/Hintergrund Profil.png') no-repeat center center;
 	background-size: cover;
 	color: #f3f6fa;
 	padding: 28px 20px 20px 20px;

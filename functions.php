@@ -1,10 +1,13 @@
 <?php
-function includeIfExists($file) {
-	if (file_exists($file)) {
-		include($file);
-	} else {
-		echo "Datei nicht gefunden: $file";
-	}
+function includeIfExists(string $relPath) {
+    // Erzeuge hier den tatsächlichen Pfad zur Datei
+    $fullPath = __DIR__ . $relPath;
+
+    if (file_exists($fullPath)) {
+        include $fullPath;
+    } else {
+        echo "Datei nicht gefunden: $fullPath";
+    }
 }
 
 function printHeader($title) {
@@ -12,8 +15,7 @@ function printHeader($title) {
 		<h1>' . htmlspecialchars($title) . '</h1>
 		<nav>
 			<ul>
-				<li><a href="index.php">Startseite</a></li>
-				<!-- <li><a href="Übersicht.html">Projekte</a></li> -->
+				<li><a href="/index.php">Startseite</a></li>
 			</ul>
 		</nav>
 	</header>';
