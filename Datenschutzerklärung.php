@@ -77,8 +77,8 @@
 </p>
 <p>
 	Jannik Muy<br />
-	Waldstraße 34<br />
-	67112 Musterstadt
+	Im Sternjagen<br />
+	67112 Mutterstadt
 </p>
 <p>
 	E-Mail: Jak250102@gmail.com
